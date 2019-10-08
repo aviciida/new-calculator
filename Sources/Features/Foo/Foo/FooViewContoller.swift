@@ -27,17 +27,20 @@ public final class FooViewController: UIViewController, Instantiatable {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private lazy var exampleView: ExampleView = ExampleView(frame: UIScreen.main.bounds)
+    private lazy var fooView: FooView = FooView(frame: UIScreen.main.bounds)
     public override func loadView() {
-        self.view = exampleView
-        self.exampleView.label.backgroundColor = .orange
-//        self.exampleView.view.backgroundColor = .orange
+        self.view = fooView
+        self.fooView.label.backgroundColor = .orange
     }
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        logger.debug("Debug info")
-        logger.info("Info info")
-        logger.error("Error info")
+        setUpHandlers()
+    }
+
+    private func setUpHandlers() {
+        fooView.didToggle = { [weak self] isOn in
+            self?.fooView.label.text = isOn ? "onやで" : "offやで"
+        }
     }
 }
