@@ -10,7 +10,19 @@
 		A8FB6941234CAF6A00184C16 /* FooViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB6940234CAF6A00184C16 /* FooViewContoller.swift */; };
 		A8FB6944234CAFD400184C16 /* AppBundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FB6943234CAFD400184C16 /* AppBundle.framework */; };
 		A8FB6946234CAFD400184C16 /* AppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FB6945234CAFD400184C16 /* AppCore.framework */; };
+		A8FB695D234CBD5500184C16 /* FooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB695C234CBD5500184C16 /* FooTests.swift */; };
+		A8FB695F234CBD5500184C16 /* libFoo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FB6936234CAF3400184C16 /* libFoo.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8FB6960234CBD5500184C16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8FB692E234CAF3400184C16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8FB6935234CAF3400184C16;
+			remoteInfo = Foo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A8FB6934234CAF3400184C16 /* CopyFiles */ = {
@@ -29,6 +41,9 @@
 		A8FB6940234CAF6A00184C16 /* FooViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooViewContoller.swift; sourceTree = "<group>"; };
 		A8FB6943234CAFD400184C16 /* AppBundle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppBundle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FB6945234CAFD400184C16 /* AppCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8FB695A234CBD5500184C16 /* FooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8FB695C234CBD5500184C16 /* FooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooTests.swift; sourceTree = "<group>"; };
+		A8FB695E234CBD5500184C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +56,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8FB6957234CBD5500184C16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8FB695F234CBD5500184C16 /* libFoo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -48,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				A8FB6938234CAF3400184C16 /* Foo */,
+				A8FB695B234CBD5500184C16 /* FooTests */,
 				A8FB6937234CAF3400184C16 /* Products */,
 				A8FB6942234CAFD400184C16 /* Frameworks */,
 			);
@@ -57,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				A8FB6936234CAF3400184C16 /* libFoo.a */,
+				A8FB695A234CBD5500184C16 /* FooTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +101,15 @@
 				A8FB6945234CAFD400184C16 /* AppCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8FB695B234CBD5500184C16 /* FooTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8FB695C234CBD5500184C16 /* FooTests.swift */,
+				A8FB695E234CBD5500184C16 /* Info.plist */,
+			);
+			path = FooTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +132,24 @@
 			productReference = A8FB6936234CAF3400184C16 /* libFoo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		A8FB6959234CBD5500184C16 /* FooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8FB6962234CBD5500184C16 /* Build configuration list for PBXNativeTarget "FooTests" */;
+			buildPhases = (
+				A8FB6956234CBD5500184C16 /* Sources */,
+				A8FB6957234CBD5500184C16 /* Frameworks */,
+				A8FB6958234CBD5500184C16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8FB6961234CBD5500184C16 /* PBXTargetDependency */,
+			);
+			name = FooTests;
+			productName = FooTests;
+			productReference = A8FB695A234CBD5500184C16 /* FooTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -109,6 +161,9 @@
 				ORGANIZATIONNAME = RyoIida;
 				TargetAttributes = {
 					A8FB6935234CAF3400184C16 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					A8FB6959234CBD5500184C16 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -127,9 +182,20 @@
 			projectRoot = "";
 			targets = (
 				A8FB6935234CAF3400184C16 /* Foo */,
+				A8FB6959234CBD5500184C16 /* FooTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8FB6958234CBD5500184C16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8FB6932234CAF3400184C16 /* Sources */ = {
@@ -140,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8FB6956234CBD5500184C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8FB695D234CBD5500184C16 /* FooTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8FB6961234CBD5500184C16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8FB6935234CAF3400184C16 /* Foo */;
+			targetProxy = A8FB6960234CBD5500184C16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A8FB693B234CAF3400184C16 /* Debug */ = {
@@ -283,6 +365,44 @@
 			};
 			name = Release;
 		};
+		A8FB6963234CBD5500184C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88DLTFK9XZ;
+				INFOPLIST_FILE = FooTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RyoIida.FooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8FB6964234CBD5500184C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88DLTFK9XZ;
+				INFOPLIST_FILE = FooTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RyoIida.FooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -300,6 +420,15 @@
 			buildConfigurations = (
 				A8FB693E234CAF3400184C16 /* Debug */,
 				A8FB693F234CAF3400184C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8FB6962234CBD5500184C16 /* Build configuration list for PBXNativeTarget "FooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8FB6963234CBD5500184C16 /* Debug */,
+				A8FB6964234CBD5500184C16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
