@@ -1,5 +1,6 @@
 name: CI
 
+
 on: [push]
 
 jobs:
@@ -18,4 +19,4 @@ jobs:
     - name: Show Xcode version
       run: xcodebuild -version
     - name: Test on iPhone11 (13.0)
-      run: xcodebuild clean test -workspace AppName.xcworkspace -scheme Development -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.0'
+      run: xcodebuild clean test -workspace CalculatorApp.xcworkspace -scheme Development -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.0'

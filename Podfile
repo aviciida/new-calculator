@@ -1,6 +1,6 @@
 platform :ios, '9.3'
 
-workspace 'AppName.xcworkspace'
+workspace 'CalculatorApp.xcworkspace'
 
 target 'App' do
   project 'Sources/App/App.xcodeproj'
