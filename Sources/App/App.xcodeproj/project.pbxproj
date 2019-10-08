@@ -27,7 +27,7 @@
 		292DC0CA2345069F007C1E7A /* AppInfoImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5FBB42344959B00B50A49 /* AppInfoImpl.swift */; };
 		292DC0CC2345069F007C1E7A /* libFeatureExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2912019B23437F0500CEAB85 /* libFeatureExample.a */; };
 		292DC0CD2345069F007C1E7A /* AppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2912019A23437F0500CEAB85 /* AppCore.framework */; };
-		292DC0CE2345069F007C1E7A /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC22A97E577B69B20554FF73 /* Pods_App.framework */; };
+		292DC0CE2345069F007C1E7A /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		292DC0D32345069F007C1E7A /* AppBundle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2912019923437F0500CEAB85 /* AppBundle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		292DC0D42345069F007C1E7A /* Mew.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2912019023437ED200CEAB85 /* Mew.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		292DC0D52345069F007C1E7A /* AppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2912019A23437F0500CEAB85 /* AppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -36,6 +36,8 @@
 		292DC0E22345080C007C1E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292DC0E12345080C007C1E7A /* LaunchScreen.storyboard */; };
 		298EF3A72341E096008EC4C5 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298EF3A62341E096008EC4C5 /* AppTests.swift */; };
 		7F04C4E79591F1BF26C55D25 /* Pods_Development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C32B3BA280635759644A29F /* Pods_Development.framework */; };
+		A8FB6948234CB1BF00184C16 /* libFoo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FB6947234CB1BF00184C16 /* libFoo.a */; };
+		A8FB6949234CB20100184C16 /* libFoo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FB6947234CB1BF00184C16 /* libFoo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,7 @@
 		55C558A55910957CA7FCDABB /* Pods-Development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Development.release.xcconfig"; path = "Target Support Files/Pods-Development/Pods-Development.release.xcconfig"; sourceTree = "<group>"; };
 		7E181E5BA0D96C8FE2BF0426 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 		9575AEC551137A1A35B6F2C5 /* Pods-Development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Development.debug.xcconfig"; path = "Target Support Files/Pods-Development/Pods-Development.debug.xcconfig"; sourceTree = "<group>"; };
+		A8FB6947234CB1BF00184C16 /* libFoo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFoo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FB6949234CB20100184C16 /* libFoo.a in Frameworks */,
 				292DC0B123450697007C1E7A /* libFeatureExample.a in Frameworks */,
 				292DC0B223450697007C1E7A /* AppCore.framework in Frameworks */,
 				7F04C4E79591F1BF26C55D25 /* Pods_Development.framework in Frameworks */,
@@ -123,7 +127,8 @@
 			files = (
 				292DC0CC2345069F007C1E7A /* libFeatureExample.a in Frameworks */,
 				292DC0CD2345069F007C1E7A /* AppCore.framework in Frameworks */,
-				292DC0CE2345069F007C1E7A /* Pods_App.framework in Frameworks */,
+				A8FB6948234CB1BF00184C16 /* libFoo.a in Frameworks */,
+				292DC0CE2345069F007C1E7A /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +145,7 @@
 		2912018F23437ED200CEAB85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8FB6947234CB1BF00184C16 /* libFoo.a */,
 				2912019923437F0500CEAB85 /* AppBundle.framework */,
 				2912019A23437F0500CEAB85 /* AppCore.framework */,
 				2912019B23437F0500CEAB85 /* libFeatureExample.a */,

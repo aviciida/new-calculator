@@ -11,6 +11,9 @@
       location = "container:Sources/Features"
       name = "Features">
       <FileRef
+         location = "group:Foo/Foo.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:FeatureExample/FeatureExample.xcodeproj">
       </FileRef>
    </Group>

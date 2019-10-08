@@ -13,3 +13,9 @@ public struct ExampleViewControllerRequest: ViewControllerRequest {
     public typealias Input = Void
     public init() {}
 }
+
+public struct FooViewControllerRequest: ViewControllerRequest {
+    public var inputValue: Void
+    public typealias Input = Void
+    public init() {}
+}
