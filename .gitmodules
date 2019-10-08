@@ -1,0 +1,9 @@
+[submodule "Carthage/Checkouts/XCTAssertAutolayout"]
+	path = Carthage/Checkouts/XCTAssertAutolayout
+	url = https://github.com/tarunon/XCTAssertAutolayout.git
+[submodule "Carthage/Checkouts/Mew"]
+	path = Carthage/Checkouts/Mew
+	url = https://github.com/yenom/Mew.git
+[submodule "Carthage/Checkouts/XCTAssertNoLeak"]
+	path = Carthage/Checkouts/XCTAssertNoLeak
+	url = https://github.com/tarunon/XCTAssertNoLeak.git

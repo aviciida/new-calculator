@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Sources/App/App.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Sources/SandBox/SandBox.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:Sources/Features"
+      name = "Features">
+      <FileRef
+         location = "group:FeatureExample/FeatureExample.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:Sources/Core"
+      name = "Core">
+      <FileRef
+         location = "group:TestCore/TestCore.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:AppCore/AppCore.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:AppBundle/AppBundle.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:Carthage/Checkouts"
+      name = "Carthage">
+      <FileRef
+         location = "group:XCTAssertNoLeak/XCTAssertNoLeak.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:XCTAssertAutolayout/XCTAssertAutolayout.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Mew/Mew.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

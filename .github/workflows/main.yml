@@ -1,0 +1,21 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+    - name: Execute Setup Script
+      run: sh setup/setup.sh
+    - name: Select Xcode version
+      run: sudo xcode-select -s '/Applications/Xcode_11.app/Contents/Developer'
+    - name: Show Xcode version
+      run: xcodebuild -version
+    - name: Test on iPhone11 (13.0)
+      run: xcodebuild clean test -workspace AppName.xcworkspace -scheme Development -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.0'
