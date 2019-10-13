@@ -11,4 +11,7 @@ import Foundation
 public protocol ViewControllerProvider {
     func apply(_ request: ExampleViewControllerRequest)
         -> ExampleViewControllerRequest.EnvironmentResponse
+
+    func apply(_ request: CalculatorViewControllerRequest)
+        -> CalculatorViewControllerRequest.EnvironmentResponse
 }

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
-class CalculatorView: XibView {
+public class CalculatorView: XibView {
 
+    @IBOutlet weak var mainLabel: UILabel!
 }

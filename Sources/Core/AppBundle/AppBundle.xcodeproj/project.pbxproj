@@ -17,7 +17,7 @@
 		291201C0234381AF00CEAB85 /* ExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291201BF234381AF00CEAB85 /* ExampleView.xib */; };
 		298EF3C02341E0BE008EC4C5 /* AppBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 298EF3BE2341E0BE008EC4C5 /* AppBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8FE41752352BA6A007C9B48 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE41742352BA6A007C9B48 /* CalculatorView.swift */; };
-		A8FE41772352BA75007C9B48 /* Calculator.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FE41762352BA75007C9B48 /* Calculator.xib */; };
+		A8FE41822352C5EC007C9B48 /* CalculatorVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FE41762352BA75007C9B48 /* CalculatorVIew.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		298EF3BE2341E0BE008EC4C5 /* AppBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppBundle.h; sourceTree = "<group>"; };
 		298EF3BF2341E0BE008EC4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8FE41742352BA6A007C9B48 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
-		A8FE41762352BA75007C9B48 /* Calculator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Calculator.xib; sourceTree = "<group>"; };
+		A8FE41762352BA75007C9B48 /* CalculatorVIew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorVIew.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				A8FE41742352BA6A007C9B48 /* CalculatorView.swift */,
-				A8FE41762352BA75007C9B48 /* Calculator.xib */,
+				A8FE41762352BA75007C9B48 /* CalculatorVIew.xib */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -184,8 +184,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FE41822352C5EC007C9B48 /* CalculatorVIew.xib in Resources */,
 				291201C0234381AF00CEAB85 /* ExampleView.xib in Resources */,
-				A8FE41772352BA75007C9B48 /* Calculator.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

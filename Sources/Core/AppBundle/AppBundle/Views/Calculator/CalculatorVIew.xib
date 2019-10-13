@@ -10,7 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorView" customModule="AppBundle" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="Mcu-UP-Lrw" id="R38-MJ-Aev"/>
+                <outlet property="mainLabel" destination="0Nf-nZ-yDu" id="xSW-WD-Q4U"/>
+                <outlet property="view" destination="Mcu-UP-Lrw" id="5rV-4q-ELU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
