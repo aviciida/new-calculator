@@ -6,6 +6,10 @@
 //  Copyright © 2019 RyoIida. All rights reserved.
 //
 
-class CalculatorViewController {
+import UIKit
+import AppCore
+import AppBundle
+
+class CalculatorViewController: UIViewController, Instantiatable {
 
 }

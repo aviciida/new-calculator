@@ -1,5 +1,5 @@
 //
-//  Calculator.swift
+//  CalculatorView.swift
 //  AppBundle
 //
 //  Created by 飯田諒 on 2019/10/13.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
+class CalculatorView: XibView {
+
+}

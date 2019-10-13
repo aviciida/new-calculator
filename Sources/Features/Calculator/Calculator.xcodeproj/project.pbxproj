@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A8FE416D2352B9F5007C9B48 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE416C2352B9F5007C9B48 /* CalculatorViewController.swift */; };
+		A8FE417A2352BBCE007C9B48 /* AppBundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FE41792352BBCE007C9B48 /* AppBundle.framework */; };
+		A8FE417C2352BBE1007C9B48 /* AppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FE417B2352BBE1007C9B48 /* AppCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		A8FE41692352B9F5007C9B48 /* libCalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCalculator.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FE416C2352B9F5007C9B48 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		A8FE41792352BBCE007C9B48 /* AppBundle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppBundle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8FE417B2352BBE1007C9B48 /* AppCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FE417C2352BBE1007C9B48 /* AppCore.framework in Frameworks */,
+				A8FE417A2352BBCE007C9B48 /* AppBundle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				A8FE416B2352B9F5007C9B48 /* Calculator */,
 				A8FE416A2352B9F5007C9B48 /* Products */,
+				A8FE41782352BBCE007C9B48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,15 @@
 				A8FE416C2352B9F5007C9B48 /* CalculatorViewController.swift */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		A8FE41782352BBCE007C9B48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8FE417B2352BBE1007C9B48 /* AppCore.framework */,
+				A8FE41792352BBCE007C9B48 /* AppBundle.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +193,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -231,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
