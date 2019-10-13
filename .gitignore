@@ -2,10 +2,6 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-## App specific
-### GitVersion.swift
-GitVersion.swift
-
 ## Build generated
 build/
 DerivedData/
@@ -66,7 +62,7 @@ Carthage/Build
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/#source-control
 
-# fastlane/report.xml
-# fastlane/Preview.html
-# fastlane/screenshots/**/*.png
-# fastlane/test_output
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
