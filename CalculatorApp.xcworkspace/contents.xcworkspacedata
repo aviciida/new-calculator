@@ -21,6 +21,9 @@
       location = "container:Sources/Core"
       name = "Core">
       <FileRef
+         location = "group:Entity/Entity.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:TestCore/TestCore.xcodeproj">
       </FileRef>
       <FileRef
