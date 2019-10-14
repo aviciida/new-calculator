@@ -10,24 +10,25 @@ import Foundation
 import UIKit
 
 public final class CalculatorView: XibView {
-    @IBOutlet weak var mainLabel: UILabel!
-    @IBOutlet weak var subLabel: UILabel!
-    @IBOutlet weak var one: UIButton!
-    @IBOutlet weak var two: UIButton!
-    @IBOutlet weak var three: UIButton!
-    @IBOutlet weak var four: UIButton!
-    @IBOutlet weak var five: UIButton!
-    @IBOutlet weak var six: UIButton!
-    @IBOutlet weak var seven: UIButton!
-    @IBOutlet weak var eight: UIButton!
-    @IBOutlet weak var nine: UIButton!
-    @IBOutlet weak var zero: UIButton!
-    @IBOutlet weak var clear: UIButton!
-    @IBOutlet weak var equal: UIButton!
-    @IBOutlet weak var add: UIButton!
-    @IBOutlet weak var minus: UIButton!
-    @IBOutlet weak var multiply: UIButton!
-    @IBOutlet weak var devide: UIButton!
+    @IBOutlet public weak var mainLabel: UILabel!
+    @IBOutlet public weak var subLabel: UILabel!
+    @IBOutlet public weak var one: UIButton!
+    @IBOutlet public weak var two: UIButton!
+    @IBOutlet public weak var three: UIButton!
+    @IBOutlet public weak var four: UIButton!
+    @IBOutlet public weak var five: UIButton!
+    @IBOutlet public weak var six: UIButton!
+    @IBOutlet public weak var seven: UIButton!
+    @IBOutlet public weak var eight: UIButton!
+    @IBOutlet public weak var nine: UIButton!
+    @IBOutlet public weak var zero: UIButton!
+    @IBOutlet public weak var clear: UIButton!
+    @IBOutlet public weak var equal: UIButton!
+    @IBOutlet public weak var add: UIButton!
+    @IBOutlet public weak var minus: UIButton!
+    @IBOutlet public weak var multiply: UIButton!
+    @IBOutlet public weak var devide: UIButton!
+    @IBOutlet public weak var popNumberButton: UIButton!
 
     public func setUp() {
         one.layer.cornerRadius = one.frame.height / 2
@@ -46,6 +47,10 @@ public final class CalculatorView: XibView {
         multiply.layer.cornerRadius = multiply.frame.height / 2
         devide.layer.cornerRadius = devide.frame.height / 2
         clear.layer.cornerRadius = clear.frame.height / 2
+    }
+
+    public func arrayOfInputtableButtons() -> [UIButton] {
+        return [one, two, three, four, five, six, seven, eight, nine, zero, equal, add, minus, multiply, devide]
     }
 
 }

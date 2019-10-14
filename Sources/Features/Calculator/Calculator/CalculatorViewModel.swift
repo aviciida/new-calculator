@@ -9,7 +9,7 @@
 import Foundation
 import Entity
 
-public class NewCalculatorViewModel {
+public class CalculatorViewModel {
 
     /// String that will be displayed as mainTextLabel
     private var resultText: String = "0" {

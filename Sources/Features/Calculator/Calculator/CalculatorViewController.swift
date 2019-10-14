@@ -14,6 +14,7 @@ public final class CalculatorViewController: UIViewController, Instantiatable {
 
     public typealias Environment = EnvironmentProvider
     public var environment: Environment
+    private lazy var viewModel: CalculatorViewModel = CalculatorViewModel()
 
     public init(with input: Input, environment: Environment) {
         self.environment = environment
@@ -28,13 +29,42 @@ public final class CalculatorViewController: UIViewController, Instantiatable {
 
     public override func loadView() {
         self.view = calculatorView
+        calculatorView.setUp()
     }
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-        calculatorView.setUp()
+        setUpCalculatorViewModel()
+
     }
-    
-    
+
+    private func setUpCalculatorViewModel() {
+        viewModel.mainLabelTextHandler = { [weak self] newValue in
+            self?.calculatorView.mainLabel.text = newValue
+        }
+        viewModel.subLabelTextHandler = { [weak self] newValue in
+            self?.calculatorView.subLabel.text = newValue
+        }
+        let buttonsArray = calculatorView.arrayOfInputtableButtons()
+        buttonsArray.forEach {
+            $0.addTarget(self, action: #selector(input(_:)), for: .touchUpInside)
+
+        }
+        calculatorView.clear.addTarget(self, action: #selector(didTapClear), for: .touchUpInside)
+        calculatorView.popNumberButton.addTarget(self, action: #selector(didTapDelete), for: .touchUpInside)
+    }
+
+    @objc private func input(_ sender: UIButton) {
+        guard let label = sender.titleLabel, let text = label.text else { return }
+        viewModel.input(text)
+    }
+
+    @objc private func didTapClear() {
+        viewModel.didTapClear()
+    }
+
+    @objc private func didTapDelete() {
+        viewModel.didTapDelete()
+    }
 
 }

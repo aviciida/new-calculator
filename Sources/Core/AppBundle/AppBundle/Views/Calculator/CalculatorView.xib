@@ -22,6 +22,7 @@
                 <outlet property="multiply" destination="6iM-Um-bVs" id="CyS-Zb-lzf"/>
                 <outlet property="nine" destination="HYx-G0-3N0" id="868-hM-2D5"/>
                 <outlet property="one" destination="c58-xl-lbA" id="X69-wW-MzP"/>
+                <outlet property="popNumberButton" destination="33w-hH-VXb" id="2id-xi-xmu"/>
                 <outlet property="seven" destination="MXq-oL-vSH" id="sSC-0E-pUi"/>
                 <outlet property="six" destination="JoC-Hh-IAO" id="cBE-UG-F54"/>
                 <outlet property="subLabel" destination="Mgm-UP-AIV" id="PeZ-a2-8c9"/>
