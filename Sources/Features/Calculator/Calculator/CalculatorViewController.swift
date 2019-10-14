@@ -30,4 +30,9 @@ public final class CalculatorViewController: UIViewController, Instantiatable {
         self.view = calculatorView
     }
 
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        calculatorView.setUp()
+    }
+
 }

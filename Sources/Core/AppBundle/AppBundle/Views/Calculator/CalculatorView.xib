@@ -10,7 +10,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorView" customModule="AppBundle" customModuleProvider="target">
             <connections>
+                <outlet property="add" destination="uZi-j4-rGs" id="8Sp-xu-Vcw"/>
+                <outlet property="clear" destination="shW-1Q-dj0" id="HoJ-ck-I7y"/>
+                <outlet property="devide" destination="Byi-Re-qOC" id="TBR-Ob-AZH"/>
+                <outlet property="eight" destination="xwn-4w-Ods" id="eUq-D3-Ikx"/>
+                <outlet property="equal" destination="jBY-LV-Beu" id="jDb-yb-rdq"/>
+                <outlet property="five" destination="daL-WW-tB4" id="dPu-uU-bkK"/>
+                <outlet property="four" destination="uwW-nL-L43" id="V8a-xQ-7Xj"/>
+                <outlet property="mainLabel" destination="FJb-4H-J8d" id="3Ih-Ms-Ure"/>
+                <outlet property="minus" destination="vjE-cI-4JP" id="Aqi-Kb-VUT"/>
+                <outlet property="multiply" destination="6iM-Um-bVs" id="CyS-Zb-lzf"/>
+                <outlet property="nine" destination="HYx-G0-3N0" id="868-hM-2D5"/>
+                <outlet property="one" destination="c58-xl-lbA" id="X69-wW-MzP"/>
+                <outlet property="seven" destination="MXq-oL-vSH" id="sSC-0E-pUi"/>
+                <outlet property="six" destination="JoC-Hh-IAO" id="cBE-UG-F54"/>
+                <outlet property="subLabel" destination="Mgm-UP-AIV" id="PeZ-a2-8c9"/>
+                <outlet property="three" destination="dIe-Bd-bzp" id="1AB-6l-cGh"/>
+                <outlet property="two" destination="oWw-bD-6UO" id="Glt-La-4kx"/>
                 <outlet property="view" destination="eGy-ku-H50" id="VDc-7i-ua5"/>
+                <outlet property="zero" destination="Eai-iQ-jhG" id="Lu0-qU-XLz"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -225,8 +243,8 @@
                         <color key="titleColor" red="1" green="0.99038680690000003" blue="0.93501685030000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgm-UP-AIV">
-                    <rect key="frame" x="317" y="283.5" width="57" height="29"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgm-UP-AIV">
+                    <rect key="frame" x="0.0" y="283.5" width="374" height="29"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="textColor" red="1" green="0.99038680690000003" blue="0.93501685030000004" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
@@ -235,6 +253,7 @@
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="XLf-3U-zW5" firstAttribute="top" secondItem="Mgm-UP-AIV" secondAttribute="bottom" constant="60" id="8U4-XN-jhY"/>
+                <constraint firstItem="Mgm-UP-AIV" firstAttribute="leading" secondItem="xKS-aD-xYk" secondAttribute="leading" id="AB8-k0-S7K"/>
                 <constraint firstItem="xKS-aD-xYk" firstAttribute="bottom" secondItem="XLf-3U-zW5" secondAttribute="bottom" constant="20" id="Qrf-WK-Ia5"/>
                 <constraint firstItem="xKS-aD-xYk" firstAttribute="trailing" secondItem="FJb-4H-J8d" secondAttribute="trailing" constant="40" id="Xrv-XF-HJl"/>
                 <constraint firstItem="XLf-3U-zW5" firstAttribute="top" secondItem="FJb-4H-J8d" secondAttribute="bottom" constant="100" id="aI8-IJ-cbv"/>
