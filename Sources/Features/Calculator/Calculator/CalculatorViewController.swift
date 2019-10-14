@@ -7,6 +7,8 @@
 //
 import AppCore
 import UIKit
+import AppBundle
+
 public final class CalculatorViewController: UIViewController, Instantiatable {
     public typealias Input = Void
 
@@ -20,6 +22,12 @@ public final class CalculatorViewController: UIViewController, Instantiatable {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    private lazy var calculatorView: CalculatorView = CalculatorView(frame: UIScreen.main.bounds)
+
+    public override func loadView() {
+        self.view = calculatorView
     }
 
 }
