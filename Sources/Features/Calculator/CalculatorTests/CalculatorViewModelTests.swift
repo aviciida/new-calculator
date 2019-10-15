@@ -197,9 +197,11 @@ class CalculatorTests: XCTestCase {
     }
 
     func testDidTapClear() {
-        // Given
+        // Given（文字列が全て削除された時にclearを押すと「0」になるかどうかのテスト
         viewModel.mainLabelTextHandler?("")
         viewModel.subLabelTextHandler?("")
+        XCTAssertEqual(resultTextLabel, "")
+        XCTAssertEqual(rawTextLabel, "")
         // When
         viewModel.didTapClear()
         // Then
