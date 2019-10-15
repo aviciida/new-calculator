@@ -86,6 +86,26 @@
                ReferencedContainer = "container:../Core/AppCore/AppCore.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8CD97362354276A00BDEBD2"
+               BuildableName = "CalculatorTests.xctest"
+               BlueprintName = "CalculatorTests"
+               ReferencedContainer = "container:../Features/Calculator/Calculator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8CD97452354284200BDEBD2"
+               BuildableName = "EntityTests.xctest"
+               BlueprintName = "EntityTests"
+               ReferencedContainer = "container:../Core/Entity/Entity.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

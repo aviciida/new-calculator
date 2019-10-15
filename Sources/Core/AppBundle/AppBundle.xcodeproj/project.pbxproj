@@ -16,6 +16,8 @@
 		291201BE234381A600CEAB85 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291201BD234381A600CEAB85 /* ExampleView.swift */; };
 		291201C0234381AF00CEAB85 /* ExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291201BF234381AF00CEAB85 /* ExampleView.xib */; };
 		298EF3C02341E0BE008EC4C5 /* AppBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 298EF3BE2341E0BE008EC4C5 /* AppBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8CD96FA235409A300BDEBD2 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD96F9235409A300BDEBD2 /* CalculatorView.swift */; };
+		A8CD96FC235409CE00BDEBD2 /* CalculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8CD96FB235409CE00BDEBD2 /* CalculatorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		298EF3BB2341E0BE008EC4C5 /* AppBundle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppBundle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		298EF3BE2341E0BE008EC4C5 /* AppBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppBundle.h; sourceTree = "<group>"; };
 		298EF3BF2341E0BE008EC4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8CD96F9235409A300BDEBD2 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		A8CD96FB235409CE00BDEBD2 /* CalculatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		291201BB2343818C00CEAB85 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A8CD96F82354099100BDEBD2 /* Calculator */,
 				291201B8234380AB00CEAB85 /* ViewCatalog.swift */,
 				291201BC2343819900CEAB85 /* Example */,
 			);
@@ -98,6 +103,15 @@
 				298EF3BF2341E0BE008EC4C5 /* Info.plist */,
 			);
 			path = AppBundle;
+			sourceTree = "<group>";
+		};
+		A8CD96F82354099100BDEBD2 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				A8CD96F9235409A300BDEBD2 /* CalculatorView.swift */,
+				A8CD96FB235409CE00BDEBD2 /* CalculatorView.xib */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CD96FC235409CE00BDEBD2 /* CalculatorView.xib in Resources */,
 				291201C0234381AF00CEAB85 /* ExampleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +200,7 @@
 				291201B12343806900CEAB85 /* ClassNameProtocol.swift in Sources */,
 				291201B32343808200CEAB85 /* NibProtocol.swift in Sources */,
 				291201B7234380A000CEAB85 /* XibView.swift in Sources */,
+				A8CD96FA235409A300BDEBD2 /* CalculatorView.swift in Sources */,
 				291201B9234380AB00CEAB85 /* ViewCatalog.swift in Sources */,
 				291201BE234381A600CEAB85 /* ExampleView.swift in Sources */,
 				291201B52343809500CEAB85 /* UIImage+Extension.swift in Sources */,

@@ -11,12 +11,18 @@
       location = "container:Sources/Features"
       name = "Features">
       <FileRef
+         location = "group:Calculator/Calculator.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:FeatureExample/FeatureExample.xcodeproj">
       </FileRef>
    </Group>
    <Group
       location = "container:Sources/Core"
       name = "Core">
+      <FileRef
+         location = "group:Entity/Entity.xcodeproj">
+      </FileRef>
       <FileRef
          location = "group:TestCore/TestCore.xcodeproj">
       </FileRef>

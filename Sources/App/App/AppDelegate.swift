@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window = window
             window.makeKeyAndVisible()
 
-            let vc = environment.apply(ExampleViewControllerRequest()).viewController
+            let vc = environment.apply(CalculatorViewControllerRequest()).viewController
             window.rootViewController = vc
         }
 
